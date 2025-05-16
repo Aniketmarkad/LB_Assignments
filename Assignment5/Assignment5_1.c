@@ -1,0 +1,49 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// file name   : Assignment5_1.c 
+// Description : Write a program which accept number from user and print that number of "$" and "*"
+// Author      : Aniket Devaba Markad 
+// Date        : 16/05/2025
+// 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+
+#include<stdio.h>
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+// 
+// Function Name : Pattern
+// Description   : This function is used to print "$" and "*" 
+// Input         : int 
+// Output        : void
+// Author        : Aniket Devaba Markad 
+// Date          : 16/05/2025 
+// 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+
+void Pattern(int iNo)
+{
+    int iCnt = 0;
+
+    if(iNo < 0)
+    {
+        iNo = -iNo;
+    }
+
+    for(iCnt = 1;iCnt <= iNo; iCnt++)
+    {
+        printf("$ \t * \t");
+    }
+}
+
+int main()
+{
+    int iValue = 0;
+
+    printf("Enter number :");
+    scanf("%d ",&iValue);
+
+    Pattern(iValue);
+
+    return 0;
+}
+//Time Complexcity is : O(n).
