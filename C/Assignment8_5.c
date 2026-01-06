@@ -1,0 +1,42 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// file name   : Assignment8_5.c 
+// Description : Write a program which accept area in square feet and convert it into square meter..
+// Author      : Aniket Devaba Markad 
+// Date        : 16/05/2025
+// 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+
+#include<stdio.h>
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+// 
+// Function Name : SquareMeter
+// Description   : This function is used to convert square feet  into square meter . 
+// Input         : int 
+// Output        : double
+// Author        : Aniket Devaba Markad 
+// Date          : 16/05/2025 
+// 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+
+double SquareMeter(int iValue)
+{
+     double Meter = iValue*0.0929;
+     return Meter;
+}
+int main()
+{
+    int iValue = 0;
+    double iRet = 0;
+
+    printf("Enter area in square feet");
+    scanf("%d",&iValue);
+    
+    
+    iRet=SquareMeter(iValue);
+    printf(" squareMeter : %lf",iRet);
+
+    return  0;
+
+}

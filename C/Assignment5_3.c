@@ -1,0 +1,49 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// file name   : Assignment5_3.c 
+// Description : Write a program which accept number from user and print numberline of that number.
+// Author      : Aniket Devaba Markad 
+// Date        : 16/05/2025
+// 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+
+#include<stdio.h>
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+// 
+// Function Name : DisplayNumber
+// Description   : This function is used to print numberline. 
+// Input         : int 
+// Output        : void
+// Author        : Aniket Devaba Markad 
+// Date          : 16/05/2025 
+// 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+
+void DisplayNumber(int iNo)
+{
+    int iCnt = 0;
+
+    if(iNo < 0)
+    {
+        iNo = -iNo;
+    }
+
+    for(iCnt = -iNo;iCnt <= iNo; iCnt++)
+    {
+        printf("%d\t",iCnt);
+    }
+}
+
+int main()
+{
+    int iValue = 0;
+
+    printf("Enter number :");
+    scanf("%d ",&iValue);
+
+    DisplayNumber(iValue);
+
+    return 0;
+}
+//Time Complexcity is : O(n).
