@@ -1,0 +1,44 @@
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// File name   : Assignment3_4.cpp
+// Description : Accept char from user and convert case of that character.
+// Author      : Aniket Devaba Markad
+// Date        : 09/12/2025
+//
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include<iostream>
+using namespace std;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Function name : DisplayConvert
+// Description   : Convert character from lowercase to uppercase and uppercase to lowercase
+// Input         : char
+// Output        : void
+//
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+void DisplayConvert(char cValue)
+{
+    if(cValue >= 'a' && cValue <= 'z')
+    {
+        cout << char(cValue - 32) << "\n";
+    }
+    else if(cValue >= 'A' && cValue <= 'Z')
+    {
+        cout << char(cValue + 32) << "\n";
+    }
+}
+
+int main()
+{
+    char cValue = '\0';
+
+    cout << "Enter character:";
+    cin >> cValue;
+
+    DisplayConvert(cValue);
+
+    return 0;
+}
