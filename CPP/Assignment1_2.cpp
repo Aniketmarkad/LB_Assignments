@@ -1,0 +1,38 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//   
+//  file name    : Assignment1_2.cpp
+//  Description  : Program to display "Marvellous" 5 times on screen.
+//  Author       : Aniket Devaba Markad
+//  Date         : 08/12/2025
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include<iostream>
+using namespace std;
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Function Name : Display
+// Description   : This function is used to display "Marvellous" 5 times.
+// Input         : void
+// Output        : void
+// Author        : Aniket Devaba Markad
+// Date          : 08/12/2025
+//
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+void Display()
+{
+    int iCnt = 0;
+
+    for(iCnt = 1; iCnt <= 5; iCnt++)
+    {
+        cout << iCnt << ":Marvellous\n";
+    }
+}
+
+int main()
+{
+    Display();
+    return 0;
+}
