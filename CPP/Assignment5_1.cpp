@@ -1,0 +1,47 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  file name   : Assignment5_1.cpp 
+//  Description : Write a program which accept number from user and print that number of "$" and "*"
+//  Author      : Aniket Devaba Markad 
+//  Date        : 10/12/2025
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include <iostream>
+using namespace std;
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name : Pattern
+//  Description   : This function is used to print "$" and "*" 
+//  Input         : int 
+//  Output        : void
+//  Author        : Aniket Devaba Markad 
+//  Date          : 10/12/2025
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+void Pattern(int iNo)
+{
+    if(iNo < 0)
+        iNo = -iNo;
+
+    for(int iCnt = 1; iCnt <= iNo; iCnt++)
+    {
+        cout << "$ \t * \t";
+    }
+}
+
+int main()
+{
+    int iValue = 0;
+
+    cout << "Enter number: ";
+    cin >> iValue;
+
+    Pattern(iValue);
+
+    return 0;
+}
+
+// Time Complexity: O(n)

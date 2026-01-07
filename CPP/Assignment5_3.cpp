@@ -1,0 +1,47 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  file name   : Assignment5_3.cpp 
+//  Description : Write a program which accept number from user and print number line of that number.
+//  Author      : Aniket Devaba Markad 
+//  Date        : 10/12/2025
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include <iostream>
+using namespace std;
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name : DisplayNumber
+//  Description   : This function is used to print number line
+//  Input         : int 
+//  Output        : void
+//  Author        : Aniket Devaba Markad 
+//  Date          : 10/12/2025
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+void DisplayNumber(int iNo)
+{
+    if(iNo < 0)
+        iNo = -iNo;
+
+    for(int iCnt = -iNo; iCnt <= iNo; iCnt++)
+    {
+        cout << iCnt << "\t";
+    }
+}
+
+int main()
+{
+    int iValue = 0;
+
+    cout << "Enter number: ";
+    cin >> iValue;
+
+    DisplayNumber(iValue);
+
+    return 0;
+}
+
+// Time Complexity: O(n)
