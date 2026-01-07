@@ -1,0 +1,49 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  file name   : Assignment7_2.cpp 
+//  Description : Write a program which accept dollar amount and return in Indian currency
+//  Author      : Aniket Devaba Markad 
+//  Date        : 10/12/2025
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include <iostream>
+using namespace std;
+
+#define INR 70
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name : DollarToINR
+//  Description   : This function converts USD to INR
+//  Input         : int 
+//  Output        : int
+//  Author        : Aniket Devaba Markad 
+//  Date          : 10/12/2025
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+int DollarToINR(int iNo)
+{
+    if(iNo < 0)
+        iNo = -iNo;
+
+    return iNo * INR;
+}
+
+int main()
+{
+    int iValue = 0;
+    int iRet = 0;
+
+    cout << "Enter amount in USD: ";
+    cin >> iValue;
+
+    iRet = DollarToINR(iValue);
+
+    cout << "Amount in Indian currency: " << iRet << endl;
+
+    return 0;
+}
+
+// Time Complexity: O(1)
