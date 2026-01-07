@@ -1,0 +1,42 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// file name   : Assignment8_5.cpp
+// Description : Write a program which accept area in square feet and convert it into square meter.
+// Author      : Aniket Devaba Markad
+// Date        : 12/12/2025
+//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include<iostream>
+using namespace std;
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 
+// Function Name : SquareMeter
+// Description   : This function is used to convert square feet  into square meter .
+// Input         : int
+// Output        : double
+// Author        : Aniket Devaba Markad
+// Date          : 12/12/2025
+//
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+double SquareMeter(int iValue)
+{
+    double Meter = iValue*0.0929;
+    return Meter;
+}
+
+int main()
+{
+    int iValue =0;
+    double iRet = 0;
+
+    cout<<"Enter area in square feet";
+    cin>>iValue;
+
+    iRet=SquareMeter(iValue);
+    cout<<" squareMeter : "<<iRet;
+
+    return  0;
+}

@@ -1,0 +1,43 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// file name   : Assignment8_4.cpp
+// Description : Write a program which accept temperature in Fahrenheit and convert it into Celsius
+// Author      : Aniket Devaba Markad
+// Date        : 12/12/2025
+//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include<iostream>
+using namespace std;
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 
+// Function Name : FhtoCs
+// Description   : This function is used to convert temperature in Fahrenheit into Celsius.
+// Input         : float
+// Output        : double
+// Author        : Aniket Devaba Markad
+// Date          : 12/12/2025
+//
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+double FhtoCs(float fTemp)
+{
+    double celsius = (fTemp-32)*(5.0f/9.0f);
+    return celsius;
+}
+
+int main()
+{
+    float fValue = 0.0;
+    double dRet = 0.0;
+
+    cout<<"Enter temperature in Fahrenheit :";
+    cin>>fValue;
+
+    dRet=FhtoCs(fValue);
+    cout<<"temperature in Celsius : "<<dRet;
+
+    return  0;
+}
+

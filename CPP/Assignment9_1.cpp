@@ -1,0 +1,50 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// file name   : Assignment9_1.cpp
+// Description : Write a program which accept number from user and display its digits in reverse order.
+// Author      : Aniket Devaba Markad
+// Date        : 12/12/2025
+//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include<iostream>
+using namespace std;
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 
+// Function Name : DisplayDigit
+// Description   : This function is used to display its digits in reverse order.
+// Input         : int
+// Output        : void
+// Author        : Aniket Devaba Markad
+// Date          : 12/12/2025
+//
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+void DisplayDigit(int iNo)
+{
+    int iDigit = 0;
+
+    if(iNo<0)
+    {
+        iNo=-iNo;
+    }
+    while (iNo!=0)
+    {
+        iDigit=iNo%10;
+        cout<<iDigit<<"\n";
+        iNo = iNo / 10;
+    }
+}
+
+int main()
+{
+    int iValue = 0;
+
+    cout<<"Enter number";
+    cin>>iValue;
+
+    DisplayDigit(iValue);
+
+    return 0;
+}

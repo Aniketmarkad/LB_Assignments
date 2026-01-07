@@ -1,0 +1,46 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// file name   : Assignment8_1.cpp
+// Description : Write a program which accept radius of circle from user and calculate its area.
+// Author      : Aniket Devaba Markad
+// Date        : 12/12/2025
+//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include<iostream>
+using namespace std;
+#define PI 3.14
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 
+// Function Name : CircleArea
+// Description   : This function is used to calculate area of circle.
+// Input         : float
+// Output        : double
+// Author        : Aniket Devaba Markad
+// Date          : 12/12/2025
+//
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+double CircleArea(float fRadius)
+{
+    double Area = 0;
+
+    Area = PI * fRadius * fRadius;
+
+    return Area;
+}
+
+int main()
+{
+    float fValue = 0.0;
+    double dRet = 0.0;
+
+    cout<<"Enter radius";
+    cin>>fValue;
+
+    dRet=CircleArea(fValue);
+    cout<<"Area of circle : "<<dRet;
+
+    return  0;
+}
