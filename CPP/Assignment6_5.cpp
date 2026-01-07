@@ -1,0 +1,45 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  file name   : Assignment6_5.cpp 
+//  Description : Write a program which accept number from user and print table in reverse
+//  Author      : Aniket Devaba Markad 
+//  Date        : 10/12/2025
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include <iostream>
+using namespace std;
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name : DisplayTableRev
+//  Description   : This function is used to print multiplication table in reverse
+//  Input         : int 
+//  Output        : void
+//  Author        : Aniket Devaba Markad 
+//  Date          : 10/12/2025
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+void DisplayTableRev(int iNo)
+{
+    if(iNo < 0)
+        iNo = -iNo;
+
+    for(int iCnt = 10; iCnt >= 1; iCnt--)
+        cout << iNo * iCnt << endl;
+}
+
+int main()
+{
+    int iValue = 0;
+
+    cout << "Enter number: ";
+    cin >> iValue;
+
+    DisplayTableRev(iValue);
+
+    return 0;
+}
+
+// Time Complexity: O(n)

@@ -1,0 +1,45 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  file name   : Assignment6_4.cpp 
+//  Description : Write a program which accept number from user and print table
+//  Author      : Aniket Devaba Markad 
+//  Date        : 10/12/2025
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include <iostream>
+using namespace std;
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name : DisplayTable
+//  Description   : This function is used to print multiplication table
+//  Input         : int 
+//  Output        : void
+//  Author        : Aniket Devaba Markad 
+//  Date          : 10/12/2025
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+void DisplayTable(int iNo)
+{
+    if(iNo < 0)
+        iNo = -iNo;
+
+    for(int iCnt = 1; iCnt <= 10; iCnt++)
+        cout << iNo * iCnt << endl;
+}
+
+int main()
+{
+    int iValue = 0;
+
+    cout << "Enter number: ";
+    cin >> iValue;
+
+    DisplayTable(iValue);
+
+    return 0;
+}
+
+// Time Complexity: O(n)
