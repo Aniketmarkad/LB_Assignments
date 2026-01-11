@@ -53,7 +53,7 @@ int main()
     cout << "enter the no of colums" << endl;
     cin >> iValue2;
 
-    Pattern pobj;
-    pobj.Display(iValue1, iValue2);
+    Pattern *pobj = new Pattern();
+    pobj->Display(iValue1, iValue2);
     return 0;
 }
